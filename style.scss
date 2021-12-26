@@ -30,7 +30,6 @@ body {
   max-width: calc(360px - 6rem);
   background: var(--color-blue-card-bd--dark);
   padding: 1.5rem;
-  padding-bottom: 1rem;
   color: var(--color-blue--soft);
   font-weight: 300;
   display: flex;
@@ -96,7 +95,7 @@ body {
     font-size: calc(var(--font-size-paragraph) * 1.25);
   }
   .card_description {
-    font-size: 16px;
+/*     font-size: 16px; */
     line-height: 1.6rem;
     .card_description-dates {
       display: flex;
@@ -176,4 +175,10 @@ body {
 #image-full.active{
     opacity: 1;
     pointer-events: initial;
+}
+
+@media (min-width: 1440px) {
+  .card{
+    max-width: calc(360px - 4rem);
+  }
 }
